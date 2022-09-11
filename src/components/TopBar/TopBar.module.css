@@ -1,0 +1,35 @@
+.topBar{
+    width: 100%;
+    min-height: 50px;
+    height: 4.2vw;
+    background-color: #151c22;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgTopBar{
+    margin: 1.8vh;
+    z-index: 11;
+    position: relative;
+    transition: all ease-in-out .5s;
+    width: 4.5vw;
+}
+.imgContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media only screen and (max-width: 460px) {
+    .topBar{
+        height: 10px;
+        min-height: 45px;
+    }
+    .imgTopBar{
+        margin: 14px;
+        width: 10vw;
+    }
+}
