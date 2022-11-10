@@ -7,14 +7,10 @@ export function MovieCard({movie}) {
         <li className={styles.MovieCard}>
             <NavLink to={"/movies/" + movie.id}>
                 <div>
-                    <img className={styles.MovieImg} width={200} height={295} src={imgUrl} alt={movie.title} />
-                    <i className='bx bx-play-circle'></i>
-                    <div  className={styles.vote}>
-                        
-                            <p>{movie.vote_average}</p>
-                        
-                        
-                    </div>
+                    <img className={styles.MovieImg} src={imgUrl} alt={movie.title} />
+                    <i className={`bx bx-play-circle ${styles.iLX}`}></i>
+                    <p className={styles.tittle}>{movie.title}</p>
+                    <p className={styles.vote}><i className='bx bxs-star'></i>{movie.vote_average}</p>
                 </div>
             </NavLink>
         </li>

@@ -14,11 +14,12 @@ $light-secondary:#23b89f1f;
     box-sizing: border-box;
 }
 .NavBar{
-    width: 19rem;
+    width: 250px;
     height: 100vh;
     background: $background;
     border-right: 2.5px solid $light-gray ;
     position: fixed; 
+    top: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -77,6 +78,14 @@ $light-secondary:#23b89f1f;
             &:hover{
                 background: linear-gradient(to top left, $light-primary 20%, $light-secondary 100%);
             }
+            a{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: $color;
+            }
             &:first-child{
                 cursor: default;
                 &:hover{
@@ -116,7 +125,6 @@ $light-secondary:#23b89f1f;
             margin-right: -2rem;
         }
         .UserName{
-            transform: translateX(-1rem);
             cursor: pointer;
         }
         .Btn{

@@ -13,7 +13,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
+*{
+  text-decoration: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

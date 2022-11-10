@@ -1,14 +1,14 @@
 .MoviesContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    gap: 50px;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fill, 190px);
+    gap: 25px;
+    padding: 10px 10px 10px 15px;
     justify-content: center;
-    transform: translateY(5vh);
-    
+    margin-top:20px;    
 }
 .divContainer{
-    margin-left: 17rem;
+    margin-left: 250px;
+    margin-top: 90px;
 }
 .divContainer:hover .title::before{
     background-color: #00ffff ;
@@ -18,11 +18,12 @@
     text-align: justify;
     color: white;
     cursor: default;
-    margin-left: 6.5vw;
+    margin-left: 40px;
 
 }
 .SubTitle{
     color: #00ffff;
+    margin-top: -18px;
 }
 .title::before{
     content: "";

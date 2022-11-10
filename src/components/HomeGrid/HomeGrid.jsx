@@ -4,7 +4,6 @@ import { MovieCard } from "../MovieCards/MovieCards"
 import styles from "./HomeGrid.module.css"
 import { Loading } from "../loading/Loading";
 import { useQuery } from "../../hooks/useQuey";
-import { Carousel } from "../Carousel/Carousel";
 
 export function HomeGrid () {
     const [movies, setMovies] = useState([]);
@@ -34,7 +33,6 @@ export function HomeGrid () {
     return(
         
         <div className={styles.divContainer}>
-            <Carousel></Carousel>
             <h3 className={styles.title}>Recommended</h3>
             <p className={styles.SubTitle}>There will always be more to enjoy!</p>
             <ul className={styles.MoviesContainer}> 

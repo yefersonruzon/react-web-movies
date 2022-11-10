@@ -12,4 +12,4 @@ export function Movies() {
            <PageMovies key={debounceSearch} search={debounceSearch}></PageMovies> 
         </div>
     )
-}
+} 

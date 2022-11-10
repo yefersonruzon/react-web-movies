@@ -1,29 +1,27 @@
 .MovieCard{
     list-style: none;
-    font-size: 1.2rem;
-    margin-bottom: 5vh;
-    text-align: center;
     transition: all ease .5s;
     font-family: poppins, sans-serif;
     border-radius: 10px;
     overflow: hidden;
-    height: 295px;
-    width: 200px;
-    box-shadow: 0px 0px 20px #6d6d6d34 ;
+    height: 100%;
+    width: 100%;
     position: relative;
+    margin-bottom: 15px;
 }
 .MovieCard img{
     position: relative;
-    transition: all ease-in-out .5s;
+    width: 100%;
+    height: 280px;
+    transition: all ease-in-out .2s;
 }
-.MovieCard:hover img{
-    
-    opacity: 0.5;
-    filter: blur(1px);
+.MovieCard img:hover{
+    opacity: 0.8;
     z-index: 1;
+    filter: brightness(.5);
     
 }
-.MovieCard i{
+.MovieCard .iLX{
     position: absolute;
     margin: auto;
     z-index: -1;
@@ -48,24 +46,30 @@
         transform: scale(1) translateY(-14.8vw) translateX(-1vw);
     }
 }
+.tittle, .vote{
+    text-align: justify;
+    text-decoration: none; 
+    color: #fff;
+    transform: translateY(-14px);
+    width: 100%;
+    height: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tittle{
+    font-size: 15px;
+    font-weight: 800;
+}
 .vote{
-    
-    background: #101010;
-    border-radius:  50%;
-    border-top: none;
-    border-right: none;
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2vw;
-    z-index: 5;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #e1ab29;
 }
-.vote p {
-    transform: translateY(7px);
-    font-size: 17px;
+.vote i {
+    margin-right: 5px;
 }
+
+
 
 
 .MovieImg{
