@@ -12,7 +12,7 @@ export function MovieCard({movie}) {
                     <p className={styles.tittle}>{movie.title}</p>
                     <p className={styles.vote}><i className='bx bxs-star'></i>{movie.vote_average}</p>
                 </div>
-            </NavLink>
+            </NavLink> 
         </li>
     );
 }
