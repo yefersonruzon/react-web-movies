@@ -9,7 +9,7 @@ export function PageMovies ({ search }) {
     const [movies, setMovies] = useState([]);
 
     const [isLoading, setIsLoading] = useState(true);   
-    const [page, setPage] = useState(1);
+    const [page, setPage] = useState(2);
     const [hasMore, setHasMore] = useState(true);
    
     useEffect(()=>{
@@ -26,7 +26,7 @@ export function PageMovies ({ search }) {
     
     return(
         
-        <InfiniteScroll dataLength={movies.length} hasMore={hasMore} loader={<Loading></Loading>} next={()=> (setPage((prevPage) => prevPage +1))} className={styles.divContainer}>
+        <InfiniteScroll  dataLength={movies.length} hasMore={hasMore} loader={<Loading></Loading>} next={()=> (setPage((prevPage) => prevPage +1))} className={styles.divContainer}>
             <ul className={styles.MoviesContainer}> 
                 {movies.map((movie) => <MovieCard key={movie.id} movie={movie}></MovieCard>)}
             </ul>
