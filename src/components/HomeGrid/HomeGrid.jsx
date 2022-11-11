@@ -1,6 +1,6 @@
 import {get} from "../../utils/HttpClient"
 import { useEffect, useState } from "react";
-import { MovieCard } from "../MovieCards/MovieCards"
+import { DiscoverCards } from "../MovieCards/DiscoverCards"
 import styles from "./HomeGrid.module.css"
 import { Loading } from "../loading/Loading";
 import { useQuery } from "../../hooks/useQuey";
@@ -39,7 +39,7 @@ export function HomeGrid () {
             <h3 className={styles.title}>Discover</h3>
             <p className={styles.SubTitle}>There will always be more to enjoy!</p>
             <ul className={styles.MoviesContainer}> 
-                {movies.map((movie) => <MovieCard key={movie.id} movie={movie}></MovieCard>)}
+                {movies.map((movie) => <DiscoverCards key={movie.id} movie={movie}></DiscoverCards>)}
             </ul>
         </div>
     )

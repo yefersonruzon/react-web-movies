@@ -78,7 +78,7 @@ $light-secondary:#23b89f1f;
             &:hover{
                 background: linear-gradient(to top left, $light-primary 20%, $light-secondary 100%);
             }
-            a{
+            a, span{
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -106,6 +106,16 @@ $light-secondary:#23b89f1f;
                 background: linear-gradient(to top left, $primary 20%, $secondary 100%);
                 }
                 background: linear-gradient(to top left, $primary 20%, $secondary 100%);
+            }
+            &.disable{
+                position: relative;
+                span{
+                    color: #ffffff5b;
+                }
+                &:hover{
+                    background: none;
+                }
+ 
             }
         }
     }

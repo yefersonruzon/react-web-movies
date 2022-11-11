@@ -9,7 +9,7 @@ export function PageMovies ({ search }) {
     const [movies, setMovies] = useState([]);
 
     const [isLoading, setIsLoading] = useState(true);   
-    const [page, setPage] = useState(2);
+    const [page, setPage] = useState(3);
     const [hasMore, setHasMore] = useState(true);
    
     useEffect(()=>{
