@@ -12,7 +12,6 @@ export function PageMovies ({ search }) {
     const [page, setPage] = useState(1);
     const [hasMore, setHasMore] = useState(true);
    
- 
     useEffect(()=>{
         setIsLoading(true);
         const searchURl = search 
@@ -24,7 +23,6 @@ export function PageMovies ({ search }) {
             setIsLoading(false)
         });
     }, [search, page]);
-    
     
     return(
         

@@ -24,7 +24,7 @@ export function HomeGrid () {
             setMovies(data.results);
             setIsLoading(false)
         });
-        
+         
     }, [search]);
     
     if (isLoading){
