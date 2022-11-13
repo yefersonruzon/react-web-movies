@@ -1,57 +1,56 @@
 .detailsContainer{
     position: relative;
-    transform: translateY(3vw);
     background-color: #2727270c;
-    height: 114.5vh;
+    height: calc(100vh);
     display: flex;
     overflow: hidden;
+    width: calc(100vw - 200px);
+    margin-left: 200px;
 }
 .imgBackdrop{
-    width: 100%;
+    width: 120%;
     opacity: .15;
     filter: brightness(10px);
     position: absolute;
     top: 0;
     left: 0; 
+    pointer-events: none;
 }
 .img{
-    width: 25vw;
+    width: 300px;
     border-radius: 10px;
-    transform: translateX(5vw) translateY(9vw);
-    height: 38vw;
+    margin-top: 150px;
+    margin-left:100px;
+    height: 450px;
     z-index: 3;
 }
 .info{
     color: #fff;
-    width: 55vw;
-    height: 45vw;
-    transform: translateX(10vw) translateY(9vw);
-    cursor: default;
+    width: 500px;
+    margin: 0 40px;
 }
 .info .p{
-    font-size: 1.8vw;
+    font-size: 1rem;
 }
 .info .data{
     display: flex;
-    padding-bottom: 7vw;
-    transform: translateY(-1vw);
+    margin-top: 70px;
 }
 .info .data p:first-child{
     border-radius: 5px;
     padding: .2vw;
     border: 1px solid #fff;
-    margin-right: 1vw;
-    font-size: 1vw;
+    margin-right: 10px;
+    font-size: 17px;
 }
 .info .data p{
-    font-size: 1.3vw;
+    font-size: 18px;
 }
 .info .description{
-    font-size: 1.3vw;
-    cursor: default;
+    font-size: 17px;
 }
 .info .description p:first-child{
-    font-size: 1.5vw;
+    font-size: 17px;
     color: #dddddd;
     margin-bottom: .5vw;
 }
@@ -86,7 +85,6 @@
         width: 55vw;
         height: 45vw;
         transform: translateX(-27vw) translateY(100vw);
-        cursor: default;
         text-align: center;
     }
     .info .p{
@@ -104,22 +102,19 @@
         padding: .5vw;
         border: 1px solid #fff;
         margin-right: 1vw;
-        font-size: 2.6vw;
+        font-size: 16px;
     }
     .info .data p{
-        font-size: 3vw;
-        margin-top: 1vw;
+        font-size: 15px;
+        margin-top: 10px;
     }
     .info .description{
-        font-size: 4vw;
-        cursor: default;
-        width: 100vw;
-        transform: translateX(-23vw);
+        font-size: 20px;
         
     }
     .info .description p:first-child{
-        font-size: 4vw;
+        font-size: 20px;
         color: #7a7a7a;
-        margin-bottom: .5vw;
+        margin-bottom: 5px;
     }
 }
