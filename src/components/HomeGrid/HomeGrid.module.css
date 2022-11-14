@@ -7,7 +7,7 @@
     margin-top:20px;    
 }
 .divContainer{
-    margin-left: 250px;
+    margin-left: 220px;
     margin-top: 90px;
 }
 .divContainer:hover .title::before{
@@ -18,7 +18,7 @@
     text-align: justify;
     color: white;
     cursor: default;
-    margin-left: 40px;
+    margin-left: 55px;
 
 }
 .SubTitle{

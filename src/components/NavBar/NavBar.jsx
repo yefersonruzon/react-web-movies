@@ -44,7 +44,7 @@ export function NavBar(){
                 
             <NavLink to={"/"} className="Logo">
                 <img  src={Logo} alt="#" className="img" />
-                <p>Movea</p>
+                <p>Movies</p>
             </NavLink>
             
             <ul>

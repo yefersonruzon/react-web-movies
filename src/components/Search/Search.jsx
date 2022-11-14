@@ -33,6 +33,11 @@ export function Search() {
                     setSearchText(value);
                     navigate(location.pathname + "?search=" + value); }}/>
             </div>
+            <div className={style.icon_container}>
+                <i className='bx bxs-message-rounded'></i>
+                <span>6</span>
+                <i className={`bx bxs-bell ${style.bell}`}></i>
+            </div>
         </form>
     )
 }

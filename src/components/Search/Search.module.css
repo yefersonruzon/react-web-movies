@@ -1,12 +1,16 @@
 .searchContainer{
    z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 15px;
 }
 .search{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 85px;
+    margin-left: 200px;
 }
 .search button{
     font-size: 1.45vw;
@@ -14,13 +18,14 @@
     border: none;
     color: #fff;
     transform: translateX(2.3rem);
+    margin-top: 4px;
 }
 .search input{
-    width: calc(100vw - 28rem);
+    width: calc(100vw - 430px);
     height: 2.4vw;
     border-radius: 10px;
     border: none;
-    background: #1c262e;
+    background: #272c30;
     color: #fff;
     padding: 10px 5px 10px 40px;
     transition: all ease-in-out .2s;
@@ -34,4 +39,45 @@
     outline: #166969 1px solid;
 }
 
-    
+.icon_container{
+    margin-left: 20px;
+    position: relative;
+}
+.icon_container > i{
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background: #166969c2;
+    margin-right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+.icon_container > i:first-child{
+    margin-right: 20px;
+}
+.icon_container > i.bell{
+    padding: 10px 10px 10px 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: #ffffff;
+    z-index: 7;
+}
+.icon_container > i.bell::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #ffffff5e;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    right: 15px;
+    z-index: 1;
+}
+.icon_container > span{
+    top: 0;
+    margin-right: -32px;
+    z-index: 5;
+    position: relative;
+    color: #fff;
+}

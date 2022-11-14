@@ -3,7 +3,6 @@ import { useEffect, useState } from "react/cjs/react.development";
 import { Loading } from "../components/loading/Loading";
 import { get } from "../utils/HttpClient";
 import style from "./MoviesInfo.module.css"
-
 export function MovieInfo () {
     const { movieId } = useParams()
     const [isLoading, setIsLoading] = useState(true)
@@ -41,7 +40,6 @@ return(
             <p>{movie.release_date}</p>
             <p>{movie.genres.map(genres => genres.name).join(",   ")}</p> 
             </div>
-            
             
             <div className={style.description}>
                 <p>{movie.title}</p>

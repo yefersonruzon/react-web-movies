@@ -5,13 +5,13 @@
     justify-content: center;
 }
 .contentLoader i{
-    transform: translateY(46vh);
+    transform: translateY(45vh) translateX(100px);
     font-size: 40px;
     color: #fff;
-    animation: infinite 1s ease-in-out loaderAnimation;
+    animation: infinite .5s ease-in-out loaderAnimation;
 }
 @keyframes loaderAnimation {
     100%{
-        transform:translateY(46vh) rotate(360deg);
+        transform:translateY(45vh) translateX(100px) rotate(360deg);
     }
 }

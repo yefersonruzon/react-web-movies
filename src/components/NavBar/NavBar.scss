@@ -14,7 +14,7 @@ $light-secondary:#23b89f1f;
     box-sizing: border-box;
 }
 .NavBar{
-    width: 250px;
+    width: 230px;
     height: 100vh;
     background: $background;
     border-right: 2.5px solid $light-gray ;
@@ -132,7 +132,7 @@ $light-secondary:#23b89f1f;
             height: 2.3rem;
             background: linear-gradient(to top left, $primary 20%, $secondary 100%);
             border-radius: 100%;
-            margin-right: -2rem;
+            margin-right: -.5rem;
         }
         .UserName{
             cursor: pointer;

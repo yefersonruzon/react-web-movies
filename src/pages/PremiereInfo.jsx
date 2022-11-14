@@ -44,6 +44,7 @@ return(
             
             
             <div className={style.description}>
+                <p className={style.title}>{movie.title}</p>
                 <p>{movie.tagline}</p>
                 <p>
                 {movie.overview}
